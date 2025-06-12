@@ -1,0 +1,258 @@
+:root {
+      --primary-dark: #003087;
+      --primary-blue: #0055a5;
+      --accent-light: #80b3ff;
+      --bg-light: #f8f9fa;
+      --bg-gradient: #e9ecef;
+      --text-dark: #4a4a4a;
+      --white: #fff;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-light);
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .navbar {
+      background-color: var(--white);
+      border-bottom: 3px solid var(--primary-blue);
+      padding: 1.5rem 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand img {
+      height: 50px;
+    }
+    .nav-link {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--primary-dark);
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: var(--primary-blue);
+    }
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .dropdown-item {
+      font-weight: 400;
+      color: var(--primary-dark);
+    }
+    .dropdown-item:hover {
+      background-color: var(--bg-light);
+      color: var(--primary-blue);
+    }
+    .dropdown-item.active {
+      background-color: var(--primary-blue);
+      color: var(--white);
+    }
+    .banner-section {
+      position: relative;
+      height: 450px;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--white);
+      margin-bottom: 3rem;
+    }
+    .banner-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+      z-index: 1;
+    }
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      max-width: 900px;
+    }
+    .banner-content h1 {
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+    .banner-content .typed-text {
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      font-weight: 300;
+      min-height: 2.5rem;
+      display: block;
+      margin-bottom: 2rem;
+    }
+    .banner-content .btn-primary {
+      font-size: 1.2rem;
+      padding: 0.8rem 2.5rem;
+      border-radius: 50px;
+      background: linear-gradient(90deg, var(--accent-light), var(--primary-blue));
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .banner-content .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(128, 179, 255, 0.6);
+    }
+    .services-section {
+      padding: 5rem 0;
+      background-color: var(--white);
+    }
+    .services-section h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .services-section p.lead {
+      font-size: 1.3rem;
+      color: var(--text-dark);
+      margin-bottom: 3rem;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .service-card {
+      background-color: var(--bg-light);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .service-card i {
+      font-size: 2.5rem;
+      color: var(--primary-blue);
+      margin-bottom: 1rem;
+    }
+    .service-card h5 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin-bottom: 1rem;
+    }
+    .service-card p {
+      font-size: 1rem;
+      color: var(--text-dark);
+      flex-grow: 1;
+    }
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary-blue), var(--accent-light));
+      color: var(--white);
+      padding: 4rem 0;
+      border-radius: 15px;
+      text-align: center;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    .cta-section h5 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    .cta-section p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-section .btn {
+      font-size: 1.1rem;
+      padding: 0.8rem 2.5rem;
+      border-radius: 50px;
+      margin: 0.5rem;
+    }
+    .cta-section .btn-outline-light:hover {
+      background: var(--white);
+      color: var(--primary-dark);
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: var(--primary-blue);
+      color: var(--white);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 9999;
+    }
+    .back-to-top.show {
+      opacity: 1;
+    }
+    .back-to-top:hover {
+      background-color: var(--accent-light);
+      transform: translateY(-5px);
+    }
+    footer {
+      background-color: var(--primary-dark);
+      color: var(--white);
+      padding: 3rem 0;
+    }
+    .footer-links a {
+      color: #f8f9fa;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    .footer-links a:hover {
+      color: var(--accent-light);
+    }
+    .social-icons a {
+      color: var(--white);
+      font-size: 1.2rem;
+      margin: 0 0.5rem;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: var(--accent-light);
+    }
+    @media (max-width: 768px) {
+      .banner-section {
+        height: 350px;
+        background-attachment: scroll;
+      }
+      .banner-content h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+      .services-section {
+        padding: 3rem 0;
+      }
+      .services-section h1 {
+        font-size: 2.2rem;
+      }
+      .service-card {
+        min-height: 280px;
+      }
+      .service-card h5 {
+        font-size: 1.3rem;
+      }
+    }
+  

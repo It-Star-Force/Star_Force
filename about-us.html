@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Star Force</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS for animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Typed.js for banner text animation -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Custom CSS -->
+ <link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">
+        <img src="WhatsApp Image 2025-05-04 at 2.05.53 AM.jpeg" alt="Star Force Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="security-services.html">Security Services</a></li>
+              <li><a class="dropdown-item" href="housekeeping.html">Housekeeping Services</a></li>
+               <li><a class="dropdown-item " href="valet-services.html">Valet Services</a></li>
+              <li><a class="dropdown-item" href="facility-management.html">Facility Management</a></li>
+              <li><a class="dropdown-item" href="consultancy-services.html">Consultancy Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="industries.html">Industries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="career.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Section -->
+  <section class="banner-section" style="background-image: url('https://st.depositphotos.com/1038076/4908/i/450/depositphotos_49080337-stock-photo-about-us.jpg')" data-aos="fade-in">
+    <div class="banner-content" data-aos="fade-up" data-aos-delay="200">
+    <!--  <h1>About Star Force</h1> -->
+      <span class="typed-text"></span>
+      <a href="#our-values" class="btn btn-primary" aria-label="Discover Our Values">Our Values</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <h1 class="text-center" data-aos="fade-up">About Star Force</h1>
+      <p class="lead text-center" data-aos="fade-up" data-aos-delay="100">Star Force is a trusted organization, committed to providing innovative and reliable solutions for diverse industries.</p>
+      
+      <!-- Our Values -->
+      <div class="our-values" id="our-values" data-aos="fade-up" data-aos-delay="200">
+        <h5>Our Core Values</h5>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="value-card" data-aos="zoom-in" data-aos-delay="300">
+              <i class="fas fa-shield-alt"></i>
+              <h6>Integrity</h6>
+              <p>We uphold the highest standards of honesty and ethics in all our services.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="value-card" data-aos="zoom-in" data-aos-delay="400">
+              <i class="fas fa-star"></i>
+              <h6>Excellence</h6>
+              <p>We strive for unparalleled quality in security and facility management.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="value-card" data-aos="zoom-in" data-aos-delay="500">
+              <i class="fas fa-lightbulb"></i>
+              <h6>Innovation</h6>
+              <p>We embrace cutting-edge solutions to meet evolving client needs.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="value-card" data-aos="zoom-in" data-aos-delay="600">
+              <i class="fas fa-users"></i>
+              <h6>Teamwork</h6>
+              <p>We foster collaboration to achieve shared goals and success.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
+        <h5>Want to Learn More?</h5>
+        <p>Contact us to explore how Star Force can partner with your organization.</p>
+        <a href="contact-us.html" class="btn btn-outline-light" aria-label="Get In Touch">Get In Touch</a>
+        <a href="services.html" class="btn btn-primary explore-services" aria-label="Explore Services Dropdown">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></a>
+
+  <!-- Footer (Original Design) -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 style="font-weight: 500;">About Star Force</h5>
+          <p style="font-size: 0.9rem; line-height: 1.6;">Star Force delivers skilled and unskilled manpower solutions to support diverse industry staffing requirements efficiently.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5 style="font-weight: 500;">Quick Links</h5>
+          <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="#">Services</a>
+            
+            <a href="career.html">Careers</a>
+            <a href="contact-us.html">Contact</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5 style="font-weight: 500;">Connect With Us</h5>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/home" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-color: rgba(255, 255, 255, 0.2);">
+      <p class="text-center mb-0">© 2021 Star Force. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({ duration: 800, once: true });
+    // Back to Top Button
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+    // Smooth Scroll for Our Values Button
+    document.querySelector('a[href="#our-values"]').addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.getElementById('our-values');
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight - 20;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    });
+    // Typed.js for Banner Text Animation
+    var typed = new Typed('.typed-text', {
+      strings: ['Delivering Security', 'Driving Excellence', 'Fostering Innovation'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1000,
+      loop: true
+    });
+    // Explore Services Button to Trigger Services Dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+      const exploreServicesBtn = document.querySelector('.explore-services');
+      if (exploreServicesBtn) {
+        console.log('Explore Services button found');
+        exploreServicesBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          console.log('Explore Services clicked');
+          const servicesDropdown = document.getElementById('servicesDropdown');
+          if (servicesDropdown) {
+            const dropdown = new bootstrap.Dropdown(servicesDropdown);
+            dropdown.toggle();
+          } else {
+            console.error('Services dropdown not found');
+          }
+        });
+      } else {
+        console.error('Explore Services button not found');
+      }
+    });
+  </script>
+</body>
+</html>
